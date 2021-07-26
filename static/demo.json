@@ -1,0 +1,137 @@
+{
+    "code": 200,
+    "success": true,
+    "headerData1": [
+        {
+            "id": 1,
+            "date": "首页"
+        },
+        {
+            "id": 2,
+            "date": "关于集团"
+        },
+        {
+            "id": 3,
+            "date": "旗下品牌"
+        },
+        {
+            "id": 7,
+            "img": "https://yjytjz.com/picture/2062e8dd9aabe61fc9f7685f8ae4ef97.png"
+        },
+        {
+            "id": 4,
+            "date": "新闻中心"
+        },
+        {
+            "id": 5,
+            "date": "产品展示"
+        },
+        {
+            "id": 6,
+            "date": "合作咨询"
+        }
+    ],
+    "foot_nav": [
+        {
+            "id": 1,
+            "span": "首页",
+            "i": "Home"
+        },
+        {
+            "id": 2,
+            "span": "关于集团",
+            "i": "ABUOT US"
+        },
+        {
+            "id": 3,
+            "span": "旗下品牌",
+            "i": "OUR BRAND"
+        },
+        {
+            "id": 4,
+            "span": "新闻中心",
+            "i": "NEWS CENTER"
+        },
+        {
+            "id": 5,
+            "span": "首页",
+            "i": "Home"
+        },
+        {
+            "id": 6,
+            "span": "首页",
+            "i": "Home"
+        },
+        {
+            "id": 7,
+            "span": "首页",
+            "i": "Home"
+        },
+        {
+            "id": 8,
+            "span": "首页",
+            "i": "Home"
+        }
+    ],
+    "carouselImg": [
+        {
+            "id": 1,
+            "imgSrc": "https://cdn.jsdelivr.net/gh/ashuo985/tu-chuan/60f1f33d01ed1acc8c1019cc30579d43.jpg"
+        },
+        {
+            "id": 2,
+            "imgSrc": "https://cdn.jsdelivr.net/gh/ashuo985/tu-chuan/2f1d1ecdd05c3fe7906025ca09cf435b.jpg"
+        },
+        {
+            "id": 3,
+            "imgSrc": "https://cdn.jsdelivr.net/gh/ashuo985/tu-chuan/645c1016c360fa2f9c2b67a2d55eedcc.jpg"
+        },
+        {
+            "id": 4,
+            "imgSrc": "https://cdn.jsdelivr.net/gh/ashuo985/tu-chuan/e8398240ab6cb9b40b4ac1228516bba1.jpg"
+        }
+    ],
+    "PcBoxIndexTop": [
+        {
+            "id": 1,
+            "imgSrc": "https://yjytjz.com/images/m-1.png",
+            "imgSrc2": "https://yjytjz.com/images/m-11.png"
+        },
+        {
+            "id": 2,
+            "imgSrc": "https://yjytjz.com/images/m-2.png",
+            "imgSrc2": "https://yjytjz.com/images/m-22.png"
+        },
+        {
+            "id": 3,
+            "imgSrc": "https://yjytjz.com/images/m-3.png",
+            "imgSrc2": "https://yjytjz.com/images/m-33.png"
+        }
+    ],
+    "PcIoxIndex3BottomR": [
+        {
+            "id": 1,
+            "imgSrc": "https://yjytjz.com/picture/p_1.jpg",
+            "p": "饺子系列",
+            "span":"Dumplings"
+        },
+        {
+            "id": 1,
+            "imgSrc": "https://yjytjz.com/picture/p_2.jpg",
+            "p": "云吞系列",
+            "span":"Ravioli"
+        },
+        {
+            "id": 1,
+            "imgSrc": "https://yjytjz.com/picture/p_3.jpg",
+            "p": "鲜面系列",
+            "span":"Noodles"
+        },
+        {
+            "id": 1,
+            "imgSrc": "https://yjytjz.com/picture/p_4.jpg",
+            "p": "更多产品",
+            "span":"More products"
+        }
+    ]
+}

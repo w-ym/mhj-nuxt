@@ -1,28 +1,44 @@
 <template>
   <div class="carousel">
     <el-carousel
+      v-if="isshow"
       height="78rem"
       class="carousel2"
       :interval="5000"
+      :initial-index='0'
       arrow="always"
     >
-      <el-carousel-item v-for="item in carouselImg" :key="item">
-        <img :src="item.imgSrc" alt="" />
+      <el-carousel-item v-for="(item,index) in carouselImg" :key="index">
+        <img :src="item.imgSrc" />
       </el-carousel-item>
     </el-carousel>
   </div>
 </template>
 
 <script>
-import DataJson from "../static/demo.json"; // 引用
+import axios from '../server/api'
 export default {
   data() {
     return {
       carouselImg: {},
+      isshow:false
     };
   },
+   methods: {
+    News() {
+      axios
+        .getDate()
+        .then((res) => {
+          this.carouselImg = res.date.carouselImg;
+          this.isshow = true
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
   mounted() {
-    this.carouselImg = DataJson.carouselImg; // 调用
+    this.News();
   },
 };
 </script>

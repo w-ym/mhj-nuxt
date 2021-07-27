@@ -1,6 +1,11 @@
 <template>
   <div>
-      <h1>123</h1>
+      <h2>
+          about
+      </h2>
+      <li>
+          <a href="#">home</a>
+      </li>
   </div>
 </template>
 

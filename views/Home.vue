@@ -123,7 +123,7 @@
   </div>
 </template>
 <script>
-import axios from "../server/api.js";
+import axios from "../../server/api.js";
 import Carousel from "../components/Carousel.vue"; // 引用
 
 export default {
@@ -310,13 +310,21 @@ export default {
   }
 
   .pc_box_index3_bottom {
+    // width: 100%;
+    width: 1200px;
+    // height: 75.1406rem;
     margin: 0 auto;
+
     .pc_box_index3_bottom_center {
-      width: 1200px;
       display: flex;
+
       .pc_box_index3_bottom_l {
-      width: 50%;
+        height: 531.41px;
+
+        // width: 600px;
         img {
+          height: 528.44px;
+          // width: 600px;
           width: 100%;
         }
       }
@@ -346,7 +354,9 @@ export default {
 
       img {
         filter: brightness(85%);
+        // width: 240px;
         width: 100%;
+        // height: 21.333rem;
       }
     }
   }
@@ -417,9 +427,6 @@ export default {
 @media screen and (max-width: 1200px) {
   .pc_about_box {
     height: 498px;
-    .pc_box_index3_bottom_center{
-      width: 100% !important;
-    }
   }
 }
 </style>

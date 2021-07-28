@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import MianNav from "../components/MianNav.vue";
-import OurBrandNews from "../components/OurBrandNews.vue";
+import MianNav from "../../components/MianNav.vue";
+import OurBrandNews from "../../components/OurBrand/OurBrandNews.vue";
 export default {
   components: { MianNav, OurBrandNews },
   data() {
@@ -47,7 +47,7 @@ export default {
         },
         {
           p: "门店展示",
-          href: "/mendianzhanshi",
+          href: "/OurBrand/mendianzhanshi",
         }
       ],
     };

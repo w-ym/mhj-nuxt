@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import axios from "../../../server/api.js";
+import axios from "../../server/api.js";
 export default {
   data() {
     return {
@@ -75,7 +75,7 @@ header {
     }
     .header-title {
       height: 100%;
-      margin-left: 1px;
+      margin:0 5px;
       flex: 1;
       > a {
         display: flex;

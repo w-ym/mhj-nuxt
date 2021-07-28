@@ -8,21 +8,22 @@
     <div class="box_center">
       <div class="box_list_title">
         <router-link
-          id="router"
           v-for="(item, index) in isList"
           :key="index"
           :class="{ isAge: item.href === $route.path }"
+          id="router"
           :to="item.href"
           >{{ item.p }}</router-link
         >
       </div>
+      <h2>xianmian</h2>
       <ProductsNews />
     </div>
   </div>
 </template>
 
 <script>
-import ProductsNews from "../components/ProductsNews.vue";
+import ProductsNews from "../../components/Products/ProductsNews.vue";
 import axios from "../../server/api.js";
 
 export default {
@@ -65,27 +66,25 @@ export default {
     height: 222px;
     text-align: center;
     a {
+      font-size: 16px;
       margin: 0 20px;
+      width: 94px;
+      height: 31px;
       line-height: 222px;
       background-color: #f5f5f5;
+      padding: 5px 12px;
       border-radius: 15px;
       color: #424242;
-      margin: 0 20px;
-      line-height: 222px;
-      background-color: #f5f5f5;
-      border-radius: 15px;
-      font-size: 16px;
-      padding: 5px 12px;
     }
     :hover {
       background-color: #00754a;
       color: #fff;
     }
   }
-}
-.isAge {
-  background-color: #00754a !important;
-  color: rgb(255, 255, 255) !important;
+  .isAge {
+    background-color: #00754a !important;
+    color: rgb(255, 255, 255) !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {

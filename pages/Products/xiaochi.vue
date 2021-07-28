@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import ProductsNews from "../components/ProductsNews.vue";
-import axios from "../server/api";
+import ProductsNews from "../../components/Products/ProductsNews.vue";
+import axios from "../../server/api";
 
 export default {
   components: { ProductsNews },

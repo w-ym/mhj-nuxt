@@ -31,22 +31,22 @@
 </template>
 <script>
 import axios from "../../server/api.js";
-import MianNav from "../components/MianNav.vue";
+import MianNav from "../../components/MianNav.vue";
 
 export default {
   components: { MianNav },
   data() {
     return {
       JoiningList: {},
-list: [
+      list: [
         {
           p: "关于加盟",
           href: "/AboutJoining",
         },
         {
           p: "联系我们",
-          href: "/lianxiwomen",
-        }
+          href: "/AboutJoining/lianxiwomen",
+        },
       ],
     };
   },

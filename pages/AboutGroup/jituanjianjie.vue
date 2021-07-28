@@ -1,16 +1,12 @@
 <template>
-<div>
-<jituanjianjie />
-</div>
-  <!-- <div>
+  <div>
     <div class="page_banner">
       <img
         src="https://cdn.jsdelivr.net/gh/ashuo985/tu-chuan/f48a01356924c55f0dec99a76d1d954c.jpg"
         alt=""
       />
     </div>
-    <mian-nav/>
-
+    <MianNav TitleP="关于集团" TitleI="ABOUT GROUP" :list="list" />
     <div class="box_content">
       <div class="box_content_center">
         <p class="center_img1">
@@ -37,25 +33,67 @@
         </p>
       </div>
     </div>
-  </div> -->
+  </div>
 </template>
-
 <script>
-// import jituanjianjie from '../components/AboutGroup/jituanjianjie.vue';
+import MianNav from "../../components/MianNav.vue";
 export default {
-  components: { jituanjianjie },
-}
+  components: { MianNav },
+  data() {
+    return {
+      index: 0,
+      tab1: true,
+      tab2: false,
+      list: [
+          {
+          p: "集团简介",
+          href: "/AboutGroup",
+        },
+        {
+          p: "关于袁记",
+          href: "/AboutGroup/guanyuyuanji",
+        },
+        {
+          p: "企业文化",
+          href: "/AboutGroup/qiyewenhua",
+        },
+        {
+          p: "集团历程",
+          href: "/AboutGroup/jituanlicheng",
+        },
+        {
+          p: "社会责任",
+          href: "/AboutGroup/shehuizeren",
+        },
+      ],
+    };
+  },
+  methods: {
+    brandAge(n) {
+      this.index = n;
+      if (n == 0 && this.a == 2) {
+        this.tab1 = !this.tab1;
+        this.tab2 = !this.tab2;
+        this.a = 1;
+        console.log(this.a);
+      }
+      if (n == 1 && this.a == 1) {
+        this.tab2 = !this.tab2;
+        this.tab1 = !this.tab1;
+        this.a = 2;
+      }
+    },
+  },
+};
 </script>
 
-<style lang='less' scoped>
+<style lang="less" scoped>
 .page_banner {
   width: 100%;
   img {
     width: 100%;
   }
 }
-
-
 .box_content {
   width: 100%;
   height: 2307px;
@@ -97,10 +135,10 @@ export default {
   .box_nav_center {
     width: 100% !important;
   }
-  .box_content_center{
+  .box_content_center {
     width: 100% !important;
   }
-  .center_img3{
+  .center_img3 {
     width: 100% !important;
   }
 }

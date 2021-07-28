@@ -7,7 +7,7 @@
       />
     </p>
     <MianNav
-      TitleP="新闻中心"
+      TitleP="新闻中心????????????"
       TitleI="NEWS CENTER"
       :list="list"
     />
@@ -17,22 +17,22 @@
 </template>
 
 <script>
-import MianNav from "../components/MianNav.vue";
-import NewsList from "../components/NewsList.vue";
-import PageNum from "../components/PageNum.vue";
+import MianNav from "../../components/MianNav.vue";
+import NewsList from "../../components/NewsCenter/NewsList.vue";
+import PageNum from "../../components/PageNum.vue";
 
 export default {
   components: { MianNav, NewsList, PageNum },
   data() {
     return {
      list: [
-        {
+          {
           p: "集团动态",
           href: "/NewsCenter",
         },
         {
           p: "行业动态",
-          href: "/hangyedongtai",
+          href: "/NewsCenter/hangyedongtai",
         }
       ],
     };

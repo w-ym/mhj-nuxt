@@ -16,15 +16,15 @@
           >{{ item.p }}</router-link
         >
       </div>
-      <h2>xianmian</h2>
+      <h2>12</h2>
       <ProductsNews />
     </div>
   </div>
 </template>
 
 <script>
-import ProductsNews from "../components/ProductsNews.vue";
-import axios from "../server/api.js";
+import ProductsNews from "../../components/Products/ProductsNews.vue";
+import axios from "../../server/api";
 
 export default {
   components: { ProductsNews },
@@ -40,6 +40,7 @@ export default {
         .getDate()
         .then((res) => {
           this.isList = res.date.Products.list;
+          console.log(res.date.Products.list);
         })
         .catch((err) => {
           console.log(err);

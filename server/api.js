@@ -6,12 +6,12 @@ import axios from "./index"
 
 const serve = {
     getDate(){
-        return axios('/headerdata1/headerdata1',{
+        return axios('/nuxt/nuxt',{
             method:'get'
         })
     },
     postLogin(data){
-        return axios('/headerdata1/headerdata1',{
+        return axios('/nuxt/nuxt',{
             method:'post',
             data:data
         })

@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import MianNav from "../components/MianNav.vue";
+import MianNav from "../../components/MianNav.vue";
 export default {
   components: { MianNav },
   data() {
@@ -90,7 +90,7 @@ export default {
         },
         {
           p: "门店展示",
-          href: "/mendianzhanshi",
+          href: "/OurBrand/mendianzhanshi",
         },
       ],
     };
@@ -118,9 +118,8 @@ export default {
 @media screen and (max-width: 1200px) {
   .box {
     width: 100% !important;
-    .div_w
-    {
-        width: 100% !important;
+    .div_w {
+      width: 100% !important;
 
       img {
         width: 100% !important;

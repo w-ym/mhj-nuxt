@@ -112,7 +112,7 @@
 </template>
 
 <script>
-import MianNav from "../components/MianNav.vue";
+import MianNav from "../../components/MianNav.vue";
 export default {
   components: { MianNav },
   data() {
@@ -122,25 +122,25 @@ export default {
       tab1: true,
       tab2: false,
        list: [
-         {
+           {
           p: "集团简介",
-          href: "/jituanjianjie",
+          href: "/AboutGroup",
         },
         {
           p: "关于袁记",
-          href: "/guanyuyuanji",
+          href: "/AboutGroup/guanyuyuanji",
         },
         {
           p: "企业文化",
-          href: "/qiyewenhua",
+          href: "/AboutGroup/qiyewenhua",
         },
         {
           p: "集团历程",
-          href: "/jituanlicheng",
+          href: "/AboutGroup/jituanlicheng",
         },
         {
           p: "社会责任",
-          href: "/shehuizeren",
+          href: "/AboutGroup/shehuizeren",
         },
       ],
     };
